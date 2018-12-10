@@ -8,5 +8,5 @@ npm-debug.log
 # Directories to ignore
 *.xpi
 *.zip
-build/
+dist/
 node_modules/

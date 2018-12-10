@@ -1,4 +1,5 @@
-import {render} from 'https://unpkg.com/lit-html?module';
+// import {render} from 'https://unpkg.com/lit-html?module';
+import {render} from "../node_modules/lit-html";
 
 export class BaseElement extends HTMLElement {
   constructor() {

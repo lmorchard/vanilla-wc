@@ -7,16 +7,25 @@
     "lib": "lib"
   },
   "scripts": {
-    "start": "http-server .",
+    "start": "webpack-dev-server",
+    "build": "webpack",
+    "server": "http-server dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "http-server": "^0.11.1"
+    "css-loader": "^2.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "http-server": "^0.11.1",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.27.1",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.10"
   },
   "dependencies": {
     "classnames": "^2.2.6",
-    "lit-html": "^0.14.0"
+    "lit-html": "^0.14.0",
+    "photon-colors": "^3.3.1"
   }
 }

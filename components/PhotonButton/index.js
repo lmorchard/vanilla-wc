@@ -1,6 +1,10 @@
-import {html} from "https://unpkg.com/lit-html?module";
-import "https://unpkg.com/classnames?module";
+//import {html} from "https://unpkg.com/lit-html?module";
+//import "https://unpkg.com/classnames?module";
+import {html} from "../../node_modules/lit-html";
+import classNames from "../../node_modules/classnames";
 import {BaseElement} from "../index.js";
+
+import styles from "./index.css";
 
 class PhotonButton extends BaseElement {
   static get observedAttributes() {
@@ -19,7 +23,7 @@ class PhotonButton extends BaseElement {
       size && `button--${size}`,
     ]);
     return html`
-      <link rel="stylesheet" href="./components/PhotonButton/index.css" />
+      <style>${styles.toString()}</style>
       <button @click=${this.handle_onClick} class="${className}">
         <slot></slot>
       </button>
